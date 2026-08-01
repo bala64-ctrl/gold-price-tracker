@@ -7,10 +7,6 @@ def main():
     notify(todays_status)
 
 
-    todays_price = fetch()
-    todays_status = check_and_modify(todays_price)
-    notify(todays_status)
-
 
 if __name__ == "__main__":
     main()
