@@ -15,7 +15,7 @@ def check_and_modify(todays_price):
             max_price = todays_price
             status_code = -1
         elif percent_change >= 5.0:
-            return 1
+            status_code = 1
 
         data["max_price"] = max_price
         data["history"].append({
