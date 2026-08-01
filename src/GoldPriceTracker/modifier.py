@@ -8,7 +8,7 @@ data = ""
 
 def check_and_modify(todays_price):
     try:
-        with open("price_tracker.json", "r") as file:
+        with open("./price_tracker.json", "r") as file:
             data = json.load(file)
             max_price = data["max_price"]
             percent_change = ((max_price-todays_price)/max_price) * 100
@@ -18,7 +18,7 @@ def check_and_modify(todays_price):
             elif percent_change >= 5.0:
                 return 1
 
-        with open("price_tracker.json", "w") as file:
+        with open("./price_tracker.json", "w") as file:
             data["max_price"] = max_price
             data["history"].append({today: todays_price, "change in percent": percent_change
                                     })
@@ -26,7 +26,7 @@ def check_and_modify(todays_price):
             
 
     except:
-        with open("price_tracker.json", "w") as file:
+        with open("./price_tracker.json", "w") as file:
             data = {}
             history = []
             history.append({today : todays_price})
