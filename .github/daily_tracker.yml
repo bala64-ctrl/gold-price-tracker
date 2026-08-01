@@ -1,0 +1,47 @@
+name: Daily Gold Price Tracker
+
+on:
+    schedule:
+        - cron: '30 6 * * *'
+    workflow_dispatch:
+
+jobs:
+    track-and-alert:
+      runs-on: ubuntu-latest
+
+      permissions:
+        contents: write
+      
+      steps:
+        - name: 1. Checkout Repository
+          uses: actions/checkout@v4
+        
+        - name: 2. Set up Python
+          uses: actions/setup-python@v5
+          with:
+          python-version: '3.11'
+
+        - name: 3. Install Dependencies
+          run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+        - name: 4. Run Gold Tracker Script
+          env:
+          API_KEY: ${{secrets.API_KEY}}
+          USER_ID: ${{secrets.USER_ID}}
+          run: |
+          python src/GoldPriceTracker/main.py
+        
+        - name: 5. Commit and Push Updated price_tracker.json
+          run: |
+          git config --global user.name "Bala Murugan"
+          git config --global user.email "bmg311204@gmail.com"
+
+          git add .
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "task: automated daily update of data.json"
+            git push
+          else
+            echo "No changes to commit"
+          fi
