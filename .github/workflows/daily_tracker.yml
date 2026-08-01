@@ -28,8 +28,8 @@ jobs:
 
         - name: 4. Run Gold Tracker Script
           env:
-          API_KEY: ${{secrets.API_KEY}}
-          USER_ID: ${{secrets.USER_ID}}
+          API_KEY: ${{ secrets.API_KEY }}
+          USER_ID: ${{ secrets.USER_ID }}
           run: |
             python src/GoldPriceTracker/main.py
         
