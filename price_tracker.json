@@ -60,6 +60,11 @@
             "timestamp": "2026-08-12 13:29:42",
             "price": 14837,
             "percent_change": -1.17
+        },
+        {
+            "timestamp": "2026-08-13 13:31:22",
+            "price": 14706,
+            "percent_change": 0.88
         }
     ]
 }
