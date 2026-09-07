@@ -1,9 +1,9 @@
 {
-    "max_price": null,
+    "max_price": 14658,
     "history": [
         {
-            "timestamp": "2026-09-06 16:44:41",
-            "price": null,
+            "timestamp": "2026-09-07 18:25:36",
+            "price": 14658,
             "percent_change": 0.0
         }
     ]
