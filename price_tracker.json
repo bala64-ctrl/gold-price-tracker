@@ -35,6 +35,11 @@
             "timestamp": "2026-09-13 17:42:33",
             "price": 14665,
             "percent_change": 0.23
+        },
+        {
+            "timestamp": "2026-09-14 18:41:39",
+            "price": 14383,
+            "percent_change": 2.15
         }
     ]
 }
