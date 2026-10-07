@@ -1,50 +1,10 @@
 {
-    "max_price": 14340,
+    "max_price": null,
     "history": [
         {
-            "timestamp": "2026-09-28 19:50:03",
-            "price": 14007,
+            "timestamp": "2026-10-07 19:13:56",
+            "price": null,
             "percent_change": 0.0
-        },
-        {
-            "timestamp": "2026-09-29 18:43:13",
-            "price": 14092,
-            "percent_change": -0.61
-        },
-        {
-            "timestamp": "2026-09-30 18:23:46",
-            "price": 14273,
-            "percent_change": -1.28
-        },
-        {
-            "timestamp": "2026-10-01 19:15:28",
-            "price": 14105,
-            "percent_change": 1.18
-        },
-        {
-            "timestamp": "2026-10-02 18:30:13",
-            "price": 14340,
-            "percent_change": -0.47
-        },
-        {
-            "timestamp": "2026-10-03 17:24:48",
-            "price": 14080,
-            "percent_change": 1.81
-        },
-        {
-            "timestamp": "2026-10-04 18:14:59",
-            "price": 14076,
-            "percent_change": 1.84
-        },
-        {
-            "timestamp": "2026-10-05 20:38:44",
-            "price": 14093,
-            "percent_change": 1.72
-        },
-        {
-            "timestamp": "2026-10-06 19:01:02",
-            "price": 14150,
-            "percent_change": 1.32
         }
     ]
 }
