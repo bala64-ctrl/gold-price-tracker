@@ -100,6 +100,11 @@
             "timestamp": "2026-11-21 20:21:20",
             "price": 11594,
             "percent_change": 17.02
+        },
+        {
+            "timestamp": "2026-11-22 20:17:30",
+            "price": 11596,
+            "percent_change": 17.01
         }
     ]
 }
